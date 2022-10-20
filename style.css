@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    background: #222831;
+    color: white;
+}
+header,nav,section,.content-container,footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ========== Menu ==========*/
+header {
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 1em 4em;
+    background: #161a20;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.3);
+}
+#logo {
+    width: 50px;
+    transition: 0.3s;
+}
+#logo:hover {
+    transform: scale(1.2);
+}
+nav {
+    justify-content: space-between;
+    width: max-content;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1em 2em;
+    border: 1px solid transparent;
+    border-radius: 0.3em;
+    transition: 0.3s;
+}
+nav a:hover {
+    border: 1px solid #f05454;
+}
+/* ========== Hero Section ==========*/
+section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+/* ========== Footer ==========*/
+footer {
+    background: #161a20;
+    padding: 3em;
+}
+#home {
+    justify-content: space-around;
+}
+.gradient-card {
+    display: flex;
+    height: 130px;
+    width: 230px;
+    border-radius: 25px;
+    padding: 50px 70px;
+    align-items: center;
+    font-weight: bold;
+    background: linear-gradient(to top right, rgb(255, 118, 0), rgb(224, 38, 229));
+}
+#section-1 {
+    justify-content: space-between;
+}
+#section-1 .content-container:nth-child(1) .gradient-card {
+    background: linear-gradient(to top right, #00a1ff, #00ff95);
+}
+#section-1 .content-container {
+    margin-top: 150px;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: row;
+}
+#section-1 .content-container:nth-child(2) {
+    display: flex;
+    margin-bottom: 50px;
+    align-self: flex-end;
+    flex-direction: row-reverse;
+}
+#section-2 {
+    flex-direction: column;
+    justify-items: center;
+}
+#section-2 .content-container:nth-child(1) .gradient-card {
+    background: linear-gradient(to top right, #ff00b1, #00a1ff);
+}
+#section-2 .content-container .gradient-card {
+    background: linear-gradient(to top right, rgb(255 235 0), rgb(38 229 199));
+}
+#section-2 .content-container:nth-child(1) {
+    display: flex;
+    margin-top: 60px;
+    height: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+#section-2 .content-container:nth-child(2) {
+    display: flex; 
+    height: 50%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#section-3 {
+    flex-direction: column;
+}
+#section-3 .content-container:nth-child(1) .gradient-card {
+    background: linear-gradient(to top right, #8906c1, #1b0144);
+}
+#section-3 .content-container:nth-child(2) .gradient-card {
+    background: linear-gradient(to top right, rgb(77 203 115), rgb(0 13 104));
+}
+#section-3 .content-container .gradient-card {
+    background: linear-gradient(to top right, rgb(255 82 0), rgb(229 161 38));
+}
+#section-3 .content-container:nth-child(1) {
+    display: flex;
+    margin-top: 60px;
+    height: 33%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#section-3 .content-container:nth-child(2) {
+    display: flex; 
+    height: 33%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+#section-3 .content-container:nth-child(3) {
+    display: flex; 
+    height: 33%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+#section-3 .content-container:nth-child(2):hover {
+    align-items: flex-start;
+}
+#section-3 .content-container:nth-child(3):hover {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 60%;
+}
+#section-3 .content-container:nth-child(3):hover .gradient-card{
+    width: 100%;
+    padding-left: 50%;
+}
+#section-4 {
+    flex-direction: row;
+}
+#section-4 .content-container:nth-child(1) .gradient-card {
+    background: linear-gradient(to top right, rgb(255 0 71), rgb(138 38 229));
+}
+#section-4 .content-container .gradient-card {
+    background: linear-gradient(to top right, rgb(13 2 74), rgb(9 178 243));
+}
+#section-4 .content-container:nth-child(1) {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#section-4 .content-container {
+    display: flex;   
+    height: 100%;
+    width: 50%;
+    flex-direction: column-reverse;
+}
+#section-5 {
+    flex-direction: row;
+}
+#section-5 .content-container:nth-child(1) {
+    display: flex;
+    height: 100%;
+    width: 33;
+    align-items: flex-end;
+}
+#section-5 .content-container:nth-child(2) {
+    display: flex;   
+    height: 100%;
+    width: 33%;
+    order: -1;
+    align-items: center;
+}
+#section-5 .content-container {
+    display: flex;   
+    height: 100%;
+    width: 33%;
+    align-items: flex-end;
+}
+#section-6 {
+    flex-wrap: wrap;
+}
+#section-6 .gradient-card {
+    background: linear-gradient(to top right, #8906c1, #1b0144);
+}
+/* плавный скролл */
+html {
+    scroll-behavior: smooth;
+}
+#section-7 {
+    flex-direction: row;
+}
+#section-7 .gradient-card {
+    background: linear-gradient(to top right, #9d1803, #1b0144);
+}
+#section-7 .gradient-card {
+    flex-grow: 1;
+}
+#section-7 .gradient-card:nth-child(2) {
+    flex-grow: 3;
+    
+}
+#section-8 {
+    flex-direction: row;
+}
+#section-8 .gradient-card {
+    background: linear-gradient(to top right, #12ff03, #ff013c);
+}
+#section-8 .gradient-card:nth-child(2) {
+    flex-basis: 50%;
+}
